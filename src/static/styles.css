@@ -90,12 +90,12 @@ section h3 {
 .participants-list {
   max-height: 120px; /* 長いリストはスクロール */
   overflow-y: auto;
-  padding-left: 18px; /* for disc bullets */
+  padding-left: 0; /* hide default bullets */
   margin: 0;
 }
 
 .participants-list li {
-  list-style: disc;
+  list-style: none;
   margin-bottom: 6px;
   padding: 6px 8px;
   border-radius: 6px;
@@ -103,6 +103,31 @@ section h3 {
   border: 1px solid #f0f0f0;
   color: #333;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.participant-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.remove-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.remove-btn:hover {
+  background: #ffecec;
 }
 
 /* 小画面での余白調整 */
