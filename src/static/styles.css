@@ -74,6 +74,44 @@ section h3 {
   margin-bottom: 8px;
 }
 
+/* 追加: 参加者リストのスタイル */
+.participants {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed #eee;
+}
+
+.participants h5 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.participants-list {
+  max-height: 120px; /* 長いリストはスクロール */
+  overflow-y: auto;
+  padding-left: 18px; /* for disc bullets */
+  margin: 0;
+}
+
+.participants-list li {
+  list-style: disc;
+  margin-bottom: 6px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  color: #333;
+  font-size: 14px;
+}
+
+/* 小画面での余白調整 */
+@media (max-width: 480px) {
+  .participants-list {
+    max-height: 90px;
+  }
+}
+
 .form-group {
   margin-bottom: 15px;
 }
